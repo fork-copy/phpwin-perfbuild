@@ -1,15 +1,15 @@
 # PHP Windows ''performance'' builds #
 
 ----
-Theses builds are based on original [php src from github](https://github.com/php/php-src) without any changes including pecl module xdebug & memcache
+These builds are based on an original [php source from github](https://github.com/php/php-src) without any changes including pecl modules xdebug & memcache.
 
-Difference with official Windows build are:
+Differences with official Windows build are:
 
-- Performance optimization (with compiler flags) that may induce security issues (I use cli & cgi for personal use without any problem but not in industrial production ^^)
-- Latest MSVC & Windows Kit version 
+- Performance optimization (with compiler flags) that may induce security issues (I use cli & cgi for personal use without any problem but not in industrial production ^^)  
+- Latest MSVC & Windows Kit version  
 - Static extension build, as possible  
 
-For now, I'll only release MSVC15 x64 NTS but don't hesitate to ask for TS and/or x86 build...
+Nowadays, I'll only release MSVC15 x64 NTS but do not hesitate to ask for TS and/or x86 build...
 
 ----
 **2017-11-29**
@@ -31,7 +31,7 @@ For now, I'll only release MSVC15 x64 NTS but don't hesitate to ask for TS and/o
 **Dependencies**
 
 - dll (non debug) from [deps](http://windows.php.net/downloads/php-sdk/deps/vc15/x64/)
-- MSVC15 redist [x64](https://download.visualstudio.microsoft.com/download/pr/11100230/15ccb3f02745c7b206ad10373cbca89b/VC_redist.x64.exe)
+- MSVC15 redist [x64 14.11.25325](https://download.visualstudio.microsoft.com/download/pr/11100230/15ccb3f02745c7b206ad10373cbca89b/VC_redist.x64.exe)
 
 **CFLAGS add:** 
 
