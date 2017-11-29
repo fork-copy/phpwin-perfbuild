@@ -24,9 +24,14 @@ For now, I'll only release MSVC15 x64 NTS but don't hesitate to ask for TS and/o
 
 - [php 7.2.0](https://github.com/php/php-src/tree/php-7.2.0)
 - [memcache 3.0.9 NON_BLOCKING_IO_php7](https://github.com/websupport-sk/pecl-memcache/tree/NON_BLOCKING_IO_php7)
-- [Xdebug 2.6.0-dev](https://github.com/xdebug/xdebug)
+- [Xdebug 2.6.0-dev](https://github.com/xdebug/xdebug) 
 - MSVC 15.4.5 19.11.25547
 - Window Kit 10.0.16299.0  
+
+**Dependencies**
+
+- dll (non debug) from [deps](http://windows.php.net/downloads/php-sdk/deps/vc15/x64/)
+- MSVC15 redist [x64](https://download.visualstudio.microsoft.com/download/pr/11100230/15ccb3f02745c7b206ad10373cbca89b/VC_redist.x64.exe)
 
 **CFLAGS add:** 
 
@@ -38,7 +43,7 @@ For now, I'll only release MSVC15 x64 NTS but don't hesitate to ask for TS and/o
   Done with [Zend/micro_bench.php](https://github.com/php/php-src/blob/master/Zend/micro_bench.php)
 
 - 3.609 [Official Windows build](http://windows.php.net/downloads/releases/php-7.2.0-nts-Win32-VC15-x64.zip)  
-- **3.008** ```/GL /GS- /Oy-```   
+- **3.008** ```/GL /GS- /Oy-``` *(16% less cpu ;)*   
 - 3.123 ```/GL /GS- /Oy ```  
 - 3.114 ```/GL /GS /Oy- ```  
 
