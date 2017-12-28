@@ -18,7 +18,7 @@ Nowadays, I'll only release MSVC15 x64 NTS but do not hesitate to ask for TS and
     Build type : Release
     Thread Safety : No
     Compiler : MSVC15 (Visual C++ 2017)
-    Architecture : x86
+    Architecture : x64
     Optimization : PGO disabled
     Static analyzer : disabled
 
