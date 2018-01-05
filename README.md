@@ -1,7 +1,7 @@
 # PHP Windows ''performance'' builds #
 
 ----
-These builds are based on an original [php source from github](https://github.com/php/php-src) without any changes including pecl modules xdebug & memcache.
+These builds are based on an original [php source from github](https://github.com/php/php-src) without any changes and including pecl modules xdebug & memcache.
 
 Differences with official Windows build are:
 
@@ -9,7 +9,7 @@ Differences with official Windows build are:
 - Latest MSVC & Windows Kit version  
 - Static extension build, as possible  
 
-Nowadays, I'll only release NTS (x86 & x64)
+Nowadays, I'll only release NTS (x86 & x64)  
 Older versions are tagged as in php-src github...
 
 ----
@@ -21,7 +21,7 @@ Older versions are tagged as in php-src github...
     Optimization : PGO disabled
     Static analyzer : disabled
 
-- [php 7.2.1-dev](https://github.com/php/php-src/tree/php-7.2.1)
+- [php 7.2.1](https://github.com/php/php-src/tree/php-7.2.1)
 - [memcache 3.0.9 NON_BLOCKING_IO_php7](https://github.com/websupport-sk/pecl-memcache/tree/NON_BLOCKING_IO_php7)
 - [Xdebug 2.6.0beta2-dev](https://github.com/xdebug/xdebug) 
 - MSVC 15.5.2 / 19.12.25831
