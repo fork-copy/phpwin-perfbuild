@@ -9,11 +9,10 @@ Differences with official Windows build are:
 - Latest MSVC & Windows Kit version  
 - Static extension build, as possible  
 
-Nowadays, I'll only release NTS (x86 & x64)  
 Older versions are tagged as in php-src github...
 
 ----
-**2018-01-05**
+**2018-01-19**
 
     Build type : Release
     Thread Safety : No
@@ -21,10 +20,11 @@ Older versions are tagged as in php-src github...
     Optimization : PGO disabled
     Static analyzer : disabled
 
-- [php 7.2.1](https://github.com/php/php-src/tree/php-7.2.1)
-- [memcache 3.0.9 NON_BLOCKING_IO_php7](https://github.com/websupport-sk/pecl-memcache/tree/NON_BLOCKING_IO_php7)
-- [Xdebug 2.6.0beta2-dev](https://github.com/xdebug/xdebug) 
-- MSVC 15.5.2 / 19.12.25831
+- [php 7.2.1 branch](https://github.com/php/php-src/tree/PHP-7.2.1)
+- [memcache 3.0.9 NON_BLOCKING_IO_php7](https://github.com/websupport-sk/pecl-memcache/tree/NON_BLOCKING_IO_php7) _shared_
+ - Patched with pull [#26](https://github.com/websupport-sk/pecl-memcache/pull/26/) to fix issue [#23](https://github.com/websupport-sk/pecl-memcache/issues/23#issuecomment-327702906) Failed to read session data with 7.1/7.2
+- [Xdebug 2.6.0beta2-dev](https://github.com/xdebug/xdebug) _shared_
+- MSVC 15.5.4 / 19.12.25834
 - Window Kit 10.0.16299.0
 
 **Dependencies**
