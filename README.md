@@ -12,7 +12,7 @@ Differences with official Windows build are:
 Older versions are tagged as in php-src github...
 
 ----
-**2018-01-19**
+**2018-02-01**
 
     Build type : Release
     Thread Safety : No
@@ -20,11 +20,11 @@ Older versions are tagged as in php-src github...
     Optimization : PGO disabled
     Static analyzer : disabled
 
-- [php 7.2.1 branch](https://github.com/php/php-src/tree/PHP-7.2.1)
+- [php 7.2.2 branch](https://github.com/php/php-src/tree/PHP-7.2.2)
 - [memcache 3.0.9 NON_BLOCKING_IO_php7](https://github.com/websupport-sk/pecl-memcache/tree/NON_BLOCKING_IO_php7) _shared_
  - Patched with pull [#26](https://github.com/websupport-sk/pecl-memcache/pull/26/) to fix issue [#23](https://github.com/websupport-sk/pecl-memcache/issues/23#issuecomment-327702906) Failed to read session data with 7.1/7.2
-- [Xdebug 2.6.0beta2-dev](https://github.com/xdebug/xdebug) _shared_
-- MSVC 15.5.4 / 19.12.25834
+- [Xdebug 2.6.0](https://github.com/xdebug/xdebug/tree/2.6.0) _shared_
+- MSVC 15.5.6 / 19.12.25835
 - Window Kit 10.0.16299.0
 
 **Dependencies**
@@ -41,8 +41,8 @@ Older versions are tagged as in php-src github...
 **Bench results** 
   Done with [Zend/micro_bench.php](https://github.com/php/php-src/blob/master/Zend/micro_bench.php)
 
-- 5.011 [Official Windows build](http://windows.php.net/downloads/releases/php-7.2.1-nts-Win32-VC15-x64.zip)  
-- **4.184** *(16% less cpu ;)*   
+- 5.103 [Official Windows build](http://windows.php.net/downloads/releases/php-7.2.1-nts-Win32-VC15-x64.zip)  
+- **4.170** *(18% less cpu ;)*   
 
 **LDFLAGS add:** 
 
