@@ -12,25 +12,24 @@ Differences with official Windows build are:
 Older versions are tagged as in php-src github...
 
 ----
-**2018-02-01**
+**2018-03-01**
 
     Build type : Release
-    Thread Safety : No
     Compiler : MSVC15 (Visual C++ 2017)
     Optimization : PGO disabled
     Static analyzer : disabled
 
-- [php 7.2.2 branch](https://github.com/php/php-src/tree/PHP-7.2.2)
+- [php 7.2.3 branch](https://github.com/php/php-src/tree/PHP-7.2.3)
 - [memcache 3.0.9 NON_BLOCKING_IO_php7](https://github.com/websupport-sk/pecl-memcache/tree/NON_BLOCKING_IO_php7) _shared_
  - Patched with pull [#26](https://github.com/websupport-sk/pecl-memcache/pull/26/) to fix issue [#23](https://github.com/websupport-sk/pecl-memcache/issues/23#issuecomment-327702906) Failed to read session data with 7.1/7.2
 - [Xdebug 2.6.0](https://github.com/xdebug/xdebug/tree/2.6.0) _shared_
-- MSVC 15.5.6 / 19.12.25835
+- MSVC 15.5.7 / 19.12.25835
 - Window Kit 10.0.16299.0
 
 **Dependencies**
 
 - dll (non debug) from deps [x86](http://windows.php.net/downloads/php-sdk/deps/vc15/x86/) - [x64](http://windows.php.net/downloads/php-sdk/deps/vc15/x64/)
-- MSVC15 redist 14.11.25325 [x86](https://aka.ms/vs/15/release/VC_redist.x86.exe) - [x64](https://aka.ms/vs/15/release/VC_redist.x64.exe)
+- MSVC15 redist 14.12.25810 [x86](https://aka.ms/vs/15/release/VC_redist.x86.exe) - [x64](https://aka.ms/vs/15/release/VC_redist.x64.exe)
 
 **CFLAGS add:** 
 
@@ -41,8 +40,8 @@ Older versions are tagged as in php-src github...
 **Bench results** 
   Done with [Zend/micro_bench.php](https://github.com/php/php-src/blob/master/Zend/micro_bench.php)
 
-- 5.103 [Official Windows build](http://windows.php.net/downloads/releases/php-7.2.1-nts-Win32-VC15-x64.zip)  
-- **4.170** *(18% less cpu ;)*   
+- 5.086 [Official Windows build](http://windows.php.net/downloads/releases/php-7.2.3-nts-Win32-VC15-x64.zip)  
+- **4.148** *(18% less cpu ;)*   
 
 **LDFLAGS add:** 
 
