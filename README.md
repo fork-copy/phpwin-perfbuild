@@ -1,7 +1,7 @@
 # PHP Windows ''performance'' builds #
 
 ----
-These builds are based on an original [php source from github](https://github.com/php/php-src) without any changes and including pecl modules xdebug & memcache.
+These builds are based on original [PHP source from github](https://github.com/php/php-src) without any changes and including pecl modules xdebug & memcache.
 
 Differences with official Windows build are:
 
