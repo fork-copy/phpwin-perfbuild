@@ -21,7 +21,7 @@ Older versions are tagged as in php-src github...
 
 - [php 7.2.5 tag](https://github.com/php/php-src/tree/php-7.2.5)
 - [memcache 3.0.9 NON_BLOCKING_IO_php7](https://github.com/websupport-sk/pecl-memcache/tree/NON_BLOCKING_IO_php7) _shared_
- - Patched with pull [#26](https://github.com/websupport-sk/pecl-memcache/pull/26/) to fix issue [#23](https://github.com/websupport-sk/pecl-memcache/issues/23#issuecomment-327702906) Failed to read session data with 7.1/7.2
+  - Patched with pull [#26](https://github.com/websupport-sk/pecl-memcache/pull/26/) to fix issue [#23](https://github.com/websupport-sk/pecl-memcache/issues/23#issuecomment-327702906) Failed to read session data with 7.1/7.2
 - [Xdebug 2.6.0](https://github.com/xdebug/xdebug/tree/2.6.0) _shared_
 - MSVC 15.6.6 / 19.13.26131.1
 - Window Kit 10.0.16299.0
