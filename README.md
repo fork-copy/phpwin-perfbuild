@@ -12,18 +12,18 @@ Differences with official Windows build are:
 Older versions are tagged as in php-src github...
 
 ----
-**2018-03-28**
+**2018-04-25**
 
     Build type : Release
     Compiler : MSVC15 (Visual C++ 2017)
     Optimization : PGO disabled
     Static analyzer : disabled
 
-- [php 7.2.4 tag](https://github.com/php/php-src/tree/php-7.2.4)
+- [php 7.2.5 tag](https://github.com/php/php-src/tree/php-7.2.5)
 - [memcache 3.0.9 NON_BLOCKING_IO_php7](https://github.com/websupport-sk/pecl-memcache/tree/NON_BLOCKING_IO_php7) _shared_
  - Patched with pull [#26](https://github.com/websupport-sk/pecl-memcache/pull/26/) to fix issue [#23](https://github.com/websupport-sk/pecl-memcache/issues/23#issuecomment-327702906) Failed to read session data with 7.1/7.2
 - [Xdebug 2.6.0](https://github.com/xdebug/xdebug/tree/2.6.0) _shared_
-- MSVC 15.6.4 / 19.13.26129
+- MSVC 15.6.6 / 19.13.26131.1
 - Window Kit 10.0.16299.0
 
 **Dependencies**
@@ -41,7 +41,7 @@ Older versions are tagged as in php-src github...
   Done with [Zend/micro_bench.php](https://github.com/php/php-src/blob/master/Zend/micro_bench.php)
 
 - 4.951 [Official Windows build](https://windows.php.net/downloads/qa/php-7.2.4RC1-nts-Win32-VC15-x64.zip) 
-- **4.168** *(15% less cpu ;)*   
+- **4.168** *(20% less cpu ;)*   
 
 **LDFLAGS add:** 
 
