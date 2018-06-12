@@ -18,7 +18,7 @@ Older versions are tagged as in php-src github...
 
 - [php 7.2.6 tag](https://github.com/php/php-src/tree/php-7.2.6)
 - [memcache 3.0.9 NON_BLOCKING_IO_php7](https://github.com/websupport-sk/pecl-memcache/tree/NON_BLOCKING_IO_php7) _shared_
-  - Patched with pull [#26](https://github.com/websupport-sk/pecl-memcache/pull/26/) to fix issue [#23](https://github.com/websupport-sk/pecl-memcache/issues/23#issuecomment-327702906) Failed to read session data with 7.1/7.2
+ - Patched with pull [#26](https://github.com/websupport-sk/pecl-memcache/pull/26/) to fix issue [#23](https://github.com/websupport-sk/pecl-memcache/issues/23#issuecomment-327702906) Failed to read session data with 7.1/7.2
 - [Xdebug 2.6.0](https://github.com/xdebug/xdebug/tree/2.6.0) _shared_
 - MSVC 15.7.3 / 19.14.26430
 - Window Kit 10.0.17134.0
@@ -114,7 +114,6 @@ Older versions are tagged as in php-src github...
 **configure**
 
 *configure  \  
-<<<<<<< HEAD
 --with-mp=8 \  
 --enable-object-out-dir=../build/ \  
 --disable-embed \  
@@ -165,54 +164,3 @@ Older versions are tagged as in php-src github...
 --with-extra-includes="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.7\Include\um";"C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um" \  
 --with-extra-libs="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.7\Lib\um\%PHP_SDK_ARCH%";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\%PHP_SDK_ARCH%" \  
 --with-xdebug=shared*
-=======
---with-mp=4  \  
---enable-object-out-dir=../build/  \  
---disable-embed  \  
---disable-phpdbgs  \  
---disable-phpdbg  \  
---disable-cli-win32  \  
---disable-test-ini  \  
---disable-debug  \  
---disable-debug-pack  \  
---disable-ipv6  \  
---disable-phpdbg-webhelper  \  
---disable-zts  \  
---disable-intl  \  
---disable-crt-debug  \  
---disable-security-flags  \  
---without-enchant  \  
---without-imap  \  
---without-snmp  \  
---without-xmlrpc  \  
---without-xsl  \  
---without-gmp  \  
---without-wddx  \  
---without-libwebp  \  
---without-interbase  \  
---without-ldap  \  
---without-oci8  \  
---without-pgsql  \  
---without-uncritical-warn-choke  \  
---enable-sockets  \  
---enable-mbstring  \  
---enable-exif  \  
---enable-memcache  \  
---enable-pdo  \  
---enable-opcache  \  
---enable-soap  \  
---enable-fileinfo  \  
---enable-com-dotnet  \  
---enable-fd-setsize=2048  \  
---enable-sanitizer  \  
---without-analyzer  \  
---with-curl  \  
---with-tidy  \  
---with-openssl  \  
---with-mysqli  \  
---with-pdo-mysql  \  
---with-bz2  \  
---with-xdebug=shared  \  
---with-extra-includes="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.7\Include\um";"C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\um"  \  
---with-extra-libs="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.7\Lib\um\x64";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.16299.0\um\x64"*
->>>>>>> 7c408ec3455d69b67843669f616c15e04fc1cf57
