@@ -110,7 +110,7 @@ Older versions are tagged as in php-src github...
   Done with [Zend/micro_bench.php](https://github.com/php/php-src/blob/master/Zend/micro_bench.php)
 
 - 5.179 [Official Windows build](https://windows.php.net/downloads/releases/php-devel-pack-7.2.6-nts-Win32-VC15-x64.zip) 
-- **4.595** *(13% less cpu ;)*   
+- **4.169** *(24% faster ;)*   
 
 **configure**
 
