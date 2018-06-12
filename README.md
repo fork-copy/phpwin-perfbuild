@@ -1,5 +1,6 @@
 
 
+
 # PHP Windows ''performance'' builds #
 
 ----
@@ -79,7 +80,6 @@ Older versions are tagged as in php-src github...
 	-------------
 	----------------------------------------------
 	| Build type      | Release                  |
-	| Thread Safety   | Yes                      |
 	| Compiler        | MSVC15 (Visual C++ 2017) |
 	| Optimization    | PGO disabled             |
 	| Static analyzer | disabled                 |
@@ -88,22 +88,23 @@ Older versions are tagged as in php-src github...
 **Dependencies**
 
 - dll (non debug) from deps [x86](http://windows.php.net/downloads/php-sdk/deps/vc15/x86/) - [x64](http://windows.php.net/downloads/php-sdk/deps/vc15/x64/)
+  - **Override libpng & libiconv by thoses provided in vc15\\%ARCH%\deps °**
 - MSVC15 redist 14.14.26429 [x86](https://aka.ms/vs/15/release/VC_redist.x86.exe) - [x64](https://aka.ms/vs/15/release/VC_redist.x64.exe)
 
 **CFLAGS add:** 
 
-- ~~[/GL](https://msdn.microsoft.com/en-us/library/0zza0de8.aspx)~~ *
+- **[/GL](https://msdn.microsoft.com/en-us/library/0zza0de8.aspx) °**
 - [/GS-](https://msdn.microsoft.com/en-us/library/8dbf701c.aspx)
 - [/Oy-](https://msdn.microsoft.com/en-us/library/2kxx5t2c.aspx)
 - [/arch:AVX](https://msdn.microsoft.com/fr-fr/library/jj620901.aspx)
 
 **LDFLAGS add:** 
 
-- ~~[/LTCG ](https://msdn.microsoft.com/en-us/library/xbf3tbeh.aspx)~~ *
+- **[/LTCG ](https://msdn.microsoft.com/en-us/library/xbf3tbeh.aspx) °** 
 - [/NODEFAULTLIB](https://msdn.microsoft.com/en-us/library/3tz4da4a.aspx):[libcmt.lib ](https://msdn.microsoft.com/en-us/library/abx4dbyh.aspx)
 - [/OPT:ICF](https://msdn.microsoft.com/en-us/library/bxwfs976.aspx)
    
-\* see https://github.com/Microsoft/php-sdk-binary-tools/issues/36
+° **see https://github.com/Microsoft/php-sdk-binary-tools/issues/36** *(self-compiled bins & working libs included in vc15\\%ARCH%\deps)*
 
 **Bench results** 
   Done with [Zend/micro_bench.php](https://github.com/php/php-src/blob/master/Zend/micro_bench.php)
