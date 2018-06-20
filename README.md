@@ -15,9 +15,9 @@ Differences with official Windows build are:
 Older versions are tagged as in php-src github...
 
 ----
-**2018-06-12**
+**2018-06-20**
 
-- [php 7.2.6 tag](https://github.com/php/php-src/tree/php-7.2.6)
+- [php 7.2.7 tag](https://github.com/php/php-src/tree/php-7.2.7)
 - [memcache 3.0.9 NON_BLOCKING_IO_php7](https://github.com/websupport-sk/pecl-memcache/tree/NON_BLOCKING_IO_php7) _shared_
  - Patched with pull [#26](https://github.com/websupport-sk/pecl-memcache/pull/26/) to fix issue [#23](https://github.com/websupport-sk/pecl-memcache/issues/23#issuecomment-327702906) Failed to read session data with 7.1/7.2
 - [Xdebug 2.6.0](https://github.com/xdebug/xdebug/tree/2.6.0) _shared_
@@ -109,8 +109,8 @@ Older versions are tagged as in php-src github...
 **Bench results** 
   Done with [Zend/micro_bench.php](https://github.com/php/php-src/blob/master/Zend/micro_bench.php)
 
-- 5.179 [Official Windows build](https://windows.php.net/downloads/releases/php-devel-pack-7.2.6-nts-Win32-VC15-x64.zip) 
-- **4.169** *(24% faster ;)*   
+- 5.084 [Official Windows build](https://windows.php.net/downloads/releases/php-7.2.7-nts-Win32-VC15-x64.zip) 
+- **4.226** *(20% faster ;)*   
 
 **configure**
 
