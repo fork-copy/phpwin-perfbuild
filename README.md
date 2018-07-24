@@ -85,7 +85,6 @@ Older versions are tagged as in php-src github...
 **Dependencies**
 
 - dll (non debug) from deps [x86](http://windows.php.net/downloads/php-sdk/deps/vc15/x86/) - [x64](http://windows.php.net/downloads/php-sdk/deps/vc15/x64/)
-  - **Override libpng & libiconv by thoses provided in vc15\\%ARCH%\deps °**
 - MSVC15 redist 14.14.26429 [x86](https://aka.ms/vs/15/release/VC_redist.x86.exe) - [x64](https://aka.ms/vs/15/release/VC_redist.x64.exe)
 
 **CFLAGS add:** 
@@ -101,16 +100,15 @@ Older versions are tagged as in php-src github...
 - [/NODEFAULTLIB](https://msdn.microsoft.com/en-us/library/3tz4da4a.aspx):[libcmt.lib ](https://msdn.microsoft.com/en-us/library/abx4dbyh.aspx)
 - [/OPT:ICF](https://msdn.microsoft.com/en-us/library/bxwfs976.aspx)
 
-**Bench results** 
-  Done with [Zend/micro_bench.php](https://github.com/php/php-src/blob/master/Zend/micro_bench.php)
+**Bench results**  
+Done with [Zend/micro_bench.php](https://github.com/php/php-src/blob/master/Zend/micro_bench.php)
 
 - **4.292**
 - 4.375 [Official Windows build](https://windows.php.net/downloads/releases/php-7.2.8-nts-Win32-VC15-x64.zip) 
 
 **configure**
 
-*configure \
---with-mp=8 \
+_--with-mp=8 \
 --enable-object-out-dir=../build/ \
 --disable-embed \
 --disable-phpdbgs \
@@ -161,6 +159,4 @@ Older versions are tagged as in php-src github...
 --with-extra-libs="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.7\Lib\um\%PHP_SDK_ARCH%";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\%PHP_SDK_ARCH%" \
 --with-xdebug=shared \
 %ZTS% \
->> %LOGNAME% 2>&1*
-
-
+\>> %LOGNAME% 2>&1_
