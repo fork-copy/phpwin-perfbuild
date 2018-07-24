@@ -104,63 +104,63 @@ Older versions are tagged as in php-src github...
 **Bench results** 
   Done with [Zend/micro_bench.php](https://github.com/php/php-src/blob/master/Zend/micro_bench.php)
 
-- 4.375 [Official Windows build](https://windows.php.net/downloads/releases/php-7.2.8-nts-Win32-VC15-x64.zip) 
 - **4.292**
+- 4.375 [Official Windows build](https://windows.php.net/downloads/releases/php-7.2.8-nts-Win32-VC15-x64.zip) 
 
 **configure**
 
 *configure \
- with-mp=8 \
- enable-object-out-dir=../build/ \
- disable-embed \
- disable-phpdbgs \
- disable-phpdbg \
- disable-cli-win32 \
- disable-test-ini \
- disable-debug \
- disable-debug-pack \
- disable-ipv6 \
- disable-phpdbg-webhelper \
- disable-intl \
- disable-crt-debug \
- disable-security-flags \
- without-enchant \
- without-imap \
- without-snmp \
- without-xmlrpc \
- without-xsl \
- without-gmp \
- without-wddx \
- without-libwebp \
- without-interbase \
- without-ldap \
- without-oci8 \
- without-pgsql \
- without-uncritical-warn-choke \
- enable-sockets \
- enable-mbstring \
- enable-exif \
- enable-memcache=shared \
- enable-pdo \
- enable-opcache \
- enable-soap \
- enable-fileinfo \
- enable-com-dotnet \
- enable-fd-setsize=2048 \
- enable-sanitizer \
- without-analyzer \
- with-curl \
- with-tidy \
- with-openssl \
- with-mysqli \
- with-pdo-mysql \
- with-bz2 \
- with-sqlite3 \
- with-pdo-sqlite \
- with-extra-includes="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.7\Include\um";"C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um" \
- with-extra-libs="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.7\Lib\um\%PHP_SDK_ARCH%";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\%PHP_SDK_ARCH%" \
- with-xdebug=shared \
- %ZTS% \
- >> %LOGNAME% 2>&1*
+--with-mp=8 \
+--enable-object-out-dir=../build/ \
+--disable-embed \
+--disable-phpdbgs \
+--disable-phpdbg \
+--disable-cli-win32 \
+--disable-test-ini \
+--disable-debug \
+--disable-debug-pack \
+--disable-ipv6 \
+--disable-phpdbg-webhelper \
+--disable-intl \
+--disable-crt-debug \
+--disable-security-flags \
+--without-enchant \
+--without-imap \
+--without-snmp \
+--without-xmlrpc \
+--without-xsl \
+--without-gmp \
+--without-wddx \
+--without-libwebp \
+--without-interbase \
+--without-ldap \
+--without-oci8 \
+--without-pgsql \
+--without-uncritical-warn-choke \
+--enable-sockets \
+--enable-mbstring \
+--enable-exif \
+--enable-memcache=shared \
+--enable-pdo \
+--enable-opcache \
+--enable-soap \
+--enable-fileinfo \
+--enable-com-dotnet \
+--enable-fd-setsize=2048 \
+--enable-sanitizer \
+--without-analyzer \
+--with-curl \
+--with-tidy \
+--with-openssl \
+--with-mysqli \
+--with-pdo-mysql \
+--with-bz2 \
+--with-sqlite3 \
+--with-pdo-sqlite \
+--with-extra-includes="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.7\Include\um";"C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um" \
+--with-extra-libs="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.7\Lib\um\%PHP_SDK_ARCH%";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\%PHP_SDK_ARCH%" \
+--with-xdebug=shared \
+%ZTS% \
+>> %LOGNAME% 2>&1*
 
 
