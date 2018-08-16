@@ -12,13 +12,13 @@ Differences with official Windows build are:
 Older versions are tagged as in php-src github...
 
 ----
-**2018-07-24**
+**2018-08-16**
 
-- [php 7.2.8 tag](https://github.com/php/php-src/tree/php-7.2.8)
+- [php 7.2.9 tag](https://github.com/php/php-src/tree/php-7.2.9)
 - [memcache 3.0.9 NON_BLOCKING_IO_php7](https://github.com/websupport-sk/pecl-memcache/tree/NON_BLOCKING_IO_php7) _shared_
  - Patched with pull [#26](https://github.com/websupport-sk/pecl-memcache/pull/26/) to fix issue [#23](https://github.com/websupport-sk/pecl-memcache/issues/23#issuecomment-327702906) Failed to read session data with 7.1/7.2
-- [Xdebug 2.6.0](https://github.com/xdebug/xdebug/tree/2.6.0) _shared_
-- MSVC 15.7.5 / 19.14.26433
+- [Xdebug 2.6.1](https://github.com/xdebug/xdebug/tree/2.6.1) _shared_
+- MSVC 15.8.0 / 19.15.26726
 - Window Kit 10.0.17134.0
 ---
 	-----------------------
@@ -38,6 +38,7 @@ Older versions are tagged as in php-src github...
 	| gd         | shared |
 	| hash       | static |
 	| iconv      | static |
+	| intl       | shared |
 	| json       | static |
 	| libxml     | static |
 	| mbstring   | static |
@@ -85,7 +86,8 @@ Older versions are tagged as in php-src github...
 **Dependencies**
 
 - dll (non debug) from deps [x86](http://windows.php.net/downloads/php-sdk/deps/vc15/x86/) - [x64](http://windows.php.net/downloads/php-sdk/deps/vc15/x64/)
-- MSVC15 redist 14.14.26429 [x86](https://aka.ms/vs/15/release/VC_redist.x86.exe) - [x64](https://aka.ms/vs/15/release/VC_redist.x64.exe)
+  - **Override libpng & libiconv by thoses provided in vc15\\%ARCH%\deps °**
+- MSVC15 redist 14.15.26706 [x86](https://aka.ms/vs/15/release/VC_redist.x86.exe) - [x64](https://aka.ms/vs/15/release/VC_redist.x64.exe)
 
 **CFLAGS add:** 
 
@@ -100,11 +102,13 @@ Older versions are tagged as in php-src github...
 - [/NODEFAULTLIB](https://msdn.microsoft.com/en-us/library/3tz4da4a.aspx):[libcmt.lib ](https://msdn.microsoft.com/en-us/library/abx4dbyh.aspx)
 - [/OPT:ICF](https://msdn.microsoft.com/en-us/library/bxwfs976.aspx)
 
+° **see https://github.com/Microsoft/php-sdk-binary-tools/issues/36** *(self-compiled bins & working libs included in vc15\\%ARCH%\deps)*
+
 **Bench results**  
 Done with [Zend/micro_bench.php](https://github.com/php/php-src/blob/master/Zend/micro_bench.php)
 
-- **4.292**
-- 4.375 [Official Windows build](https://windows.php.net/downloads/releases/php-7.2.8-nts-Win32-VC15-x64.zip) 
+- **4.238**
+- 4.392 [Official Windows build](https://windows.php.net/downloads/releases/php-7.2.9-nts-Win32-VC15-x64.zip) 
 
 **configure**
 
@@ -119,7 +123,6 @@ _--with-mp=8 \
 --disable-debug-pack \
 --disable-ipv6 \
 --disable-phpdbg-webhelper \
---disable-intl \
 --disable-crt-debug \
 --disable-security-flags \
 --without-enchant \
@@ -138,6 +141,7 @@ _--with-mp=8 \
 --enable-sockets \
 --enable-mbstring \
 --enable-exif \
+--enable-intl \
 --enable-memcache=shared \
 --enable-pdo \
 --enable-opcache \
